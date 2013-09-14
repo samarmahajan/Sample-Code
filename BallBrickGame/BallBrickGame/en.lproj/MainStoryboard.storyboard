@@ -24,21 +24,50 @@
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="6tE-2l-fa9"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="paddle.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Uy-u9-IBb"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lives:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQO-ot-Gbf">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8V-9k-5Z0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Sdo-OP-otc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Game Over" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebj-bH-Xkj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="3fR-O8-YRa"/>
+                                    <constraint firstAttribute="width" constant="310" id="6uO-0T-dfT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SgG-He-SaG" firstAttribute="baseline" secondItem="YGE-OV-aWq" secondAttribute="baseline" type="default" id="2oJ-Jx-9ta"/>
+                            <constraint firstAttribute="trailing" secondItem="YGE-OV-aWq" secondAttribute="trailing" constant="11" id="8Kw-Uk-9Ot"/>
+                            <constraint firstItem="6tE-2l-fa9" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="DTf-To-0O2"/>
                             <constraint firstAttribute="bottom" secondItem="6tE-2l-fa9" secondAttribute="bottom" constant="234" id="GSq-mb-MTx"/>
+                            <constraint firstItem="YGE-OV-aWq" firstAttribute="baseline" secondItem="SgG-He-SaG" secondAttribute="baseline" type="default" id="GuG-Ge-Ano"/>
+                            <constraint firstItem="NQO-ot-Gbf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="45" id="Jv2-Rs-VBT"/>
+                            <constraint firstItem="ebj-bH-Xkj" firstAttribute="centerX" secondItem="6tE-2l-fa9" secondAttribute="centerX" type="default" id="PjN-xd-mcv"/>
                             <constraint firstAttribute="bottom" secondItem="5Uy-u9-IBb" secondAttribute="bottom" constant="39" id="V8V-gy-pv5"/>
+                            <constraint firstItem="t8V-9k-5Z0" firstAttribute="baseline" secondItem="NQO-ot-Gbf" secondAttribute="baseline" type="default" id="a2R-fS-Q2K"/>
+                            <constraint firstItem="NQO-ot-Gbf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="10" id="dCh-A0-XfF"/>
                             <constraint firstItem="5Uy-u9-IBb" firstAttribute="leading" secondItem="6tE-2l-fa9" secondAttribute="leading" type="default" id="etQ-au-wvo"/>
-                            <constraint firstAttribute="trailing" secondItem="YGE-OV-aWq" secondAttribute="trailing" constant="11" id="lv1-ex-YqJ"/>
                             <constraint firstAttribute="trailing" secondItem="SgG-He-SaG" secondAttribute="trailing" constant="66" id="mhd-1s-bDE"/>
-                            <constraint firstItem="6tE-2l-fa9" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="qds-Qd-0tg"/>
-                            <constraint firstItem="SgG-He-SaG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="14" id="rPE-QT-hvo"/>
+                            <constraint firstAttribute="bottom" secondItem="ebj-bH-Xkj" secondAttribute="bottom" constant="145" id="oum-M2-dul"/>
+                            <constraint firstItem="t8V-9k-5Z0" firstAttribute="baseline" secondItem="SgG-He-SaG" secondAttribute="baseline" type="default" id="y3N-G6-LOV"/>
+                            <constraint firstItem="t8V-9k-5Z0" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="94" id="yfI-DT-5i4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ball" destination="6tE-2l-fa9" id="g75-E9-jlM"/>
+                        <outlet property="livesLabel" destination="t8V-9k-5Z0" id="wLM-lE-ZZB"/>
+                        <outlet property="messageLabel" destination="ebj-bH-Xkj" id="cvC-Ns-K1k"/>
                         <outlet property="paddle" destination="5Uy-u9-IBb" id="zOg-tf-WOb"/>
                         <outlet property="scoreLabel" destination="YGE-OV-aWq" id="I4l-Qc-FmW"/>
                     </connections>
@@ -59,6 +88,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="ball" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="livesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="messageLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="paddle" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
             </relationships>

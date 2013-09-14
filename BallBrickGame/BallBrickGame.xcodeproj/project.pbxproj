@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5111447017E42A31008F6C55 /* bricktype1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5111446C17E42A31008F6C55 /* bricktype1.png */; };
+		5111447117E42A31008F6C55 /* bricktype2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5111446D17E42A31008F6C55 /* bricktype2.png */; };
+		5111447217E42A31008F6C55 /* bricktype3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5111446E17E42A31008F6C55 /* bricktype3.png */; };
+		5111447317E42A31008F6C55 /* bricktype4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5111446F17E42A31008F6C55 /* bricktype4.png */; };
+		5111447617E43093008F6C55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5111447417E43089008F6C55 /* QuartzCore.framework */; };
 		516A787F17DCE7D200C9A320 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A787E17DCE7D200C9A320 /* UIKit.framework */; };
 		516A788117DCE7D200C9A320 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A788017DCE7D200C9A320 /* Foundation.framework */; };
 		516A788317DCE7D200C9A320 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A788217DCE7D200C9A320 /* CoreGraphics.framework */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5111446C17E42A31008F6C55 /* bricktype1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricktype1.png; sourceTree = "<group>"; };
+		5111446D17E42A31008F6C55 /* bricktype2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricktype2.png; sourceTree = "<group>"; };
+		5111446E17E42A31008F6C55 /* bricktype3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricktype3.png; sourceTree = "<group>"; };
+		5111446F17E42A31008F6C55 /* bricktype4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bricktype4.png; sourceTree = "<group>"; };
+		5111447417E43089008F6C55 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		516A787B17DCE7D200C9A320 /* BallBrickGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallBrickGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516A787E17DCE7D200C9A320 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		516A788017DCE7D200C9A320 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -50,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5111447617E43093008F6C55 /* QuartzCore.framework in Frameworks */,
 				51F8A6DE17DCFD950035AB30 /* CoreMotion.framework in Frameworks */,
 				516A787F17DCE7D200C9A320 /* UIKit.framework in Frameworks */,
 				516A788117DCE7D200C9A320 /* Foundation.framework in Frameworks */,
@@ -80,6 +91,7 @@
 		516A787D17DCE7D200C9A320 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5111447417E43089008F6C55 /* QuartzCore.framework */,
 				51F8A6DC17DCFD8B0035AB30 /* CoreMotion.framework */,
 				516A787E17DCE7D200C9A320 /* UIKit.framework */,
 				516A788017DCE7D200C9A320 /* Foundation.framework */,
@@ -104,6 +116,10 @@
 		516A788517DCE7D200C9A320 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5111446C17E42A31008F6C55 /* bricktype1.png */,
+				5111446D17E42A31008F6C55 /* bricktype2.png */,
+				5111446E17E42A31008F6C55 /* bricktype3.png */,
+				5111446F17E42A31008F6C55 /* bricktype4.png */,
 				51F8A6D817DCF13B0035AB30 /* ball.png */,
 				51F8A6DA17DCFCD00035AB30 /* paddle.png */,
 				516A788617DCE7D200C9A320 /* BallBrickGame-Info.plist */,
@@ -175,6 +191,10 @@
 				516A789817DCE7D200C9A320 /* MainStoryboard.storyboard in Resources */,
 				51F8A6D917DCF13B0035AB30 /* ball.png in Resources */,
 				51F8A6DB17DCFCD00035AB30 /* paddle.png in Resources */,
+				5111447017E42A31008F6C55 /* bricktype1.png in Resources */,
+				5111447117E42A31008F6C55 /* bricktype2.png in Resources */,
+				5111447217E42A31008F6C55 /* bricktype3.png in Resources */,
+				5111447317E42A31008F6C55 /* bricktype4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
